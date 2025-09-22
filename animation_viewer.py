@@ -12,13 +12,19 @@ char_jump = load_image('Jump.png')
 while True:
     for frame in range(0, 6): # attack 1
         clear_canvas()
-        char_attack.clip_draw(frame * 128, 0, 128, 128, 400, 300, 200, 200)
+        char_attack.clip_draw(frame * 128, 0, 128, 128, 400, 300, 400, 400)
         update_canvas()
         delay(0.1)
 
     for frame in range(0, 4):
         clear_canvas()
-        char_attack2.clip_draw(frame * 128, 0, 128, 128, 400, 300, 200, 200)
+        char_attack2.clip_draw(frame * 128, 0, 128, 128, 400, 300, 400, 400)
+        update_canvas()
+        delay(0.1)
+
+    for frame in range(0, 3):
+        clear_canvas()
+        char_attack3.clip_draw(frame * 128, 0, 128, 128, 400, 300, 400, 400)
         update_canvas()
         delay(0.1)
 
