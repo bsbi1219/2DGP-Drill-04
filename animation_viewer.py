@@ -43,7 +43,10 @@ while True:
     for x in range(0, 5):
         for frame in range(0, 6): # dead
             clear_canvas()
-            char_dead.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
+            if frame < 5:
+                char_dead.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
+            else:
+                char_dead.clip_draw(4 * 128, 0, 128, 100, 400, 380, 600, 600)
             update_canvas()
             delay(0.15)
 
