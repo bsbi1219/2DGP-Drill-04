@@ -38,6 +38,17 @@ while True:
             update_canvas()
             delay(0.1)
 
+    delay(1)
+
+    for x in range(0, 5):
+        for frame in range(0, 6):  # attack 1
+            clear_canvas()
+            char_dead.clip_draw(frame * 128, 0, 128, 128, 400, 350, 600, 600)
+            update_canvas()
+            delay(0.15)
+
+
+
 
 
 close_canvas()
