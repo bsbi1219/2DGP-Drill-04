@@ -16,6 +16,11 @@ while True:
         update_canvas()
         delay(0.1)
 
+    for frame in range(0, 4):
+        clear_canvas()
+        char_attack2.clip_draw(frame * 128, 0, 128, 128, 400, 300, 200, 200)
+        update_canvas()
+        delay(0.1)
 
 
 
