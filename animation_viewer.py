@@ -17,13 +17,13 @@ while True:
             update_canvas()
             delay(0.1)
 
-        for frame in range(0, 4):
+        for frame in range(0, 4): # attack 2
             clear_canvas()
             char_attack2.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
             update_canvas()
             delay(0.1)
 
-        for frame in range(0, 3):
+        for frame in range(0, 3): # attack 3
             clear_canvas()
             char_attack3.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
             update_canvas()
@@ -31,7 +31,7 @@ while True:
 
     delay(1)
 
-    for x in range(0, 5):
+    for x in range(0, 5): # run
         for frame in range(0, 8):
             clear_canvas()
             char_run.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
@@ -41,7 +41,7 @@ while True:
     delay(1)
 
     for x in range(0, 5):
-        for frame in range(0, 6):  # attack 1
+        for frame in range(0, 6): # dead
             clear_canvas()
             char_dead.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
             update_canvas()
@@ -50,7 +50,7 @@ while True:
     delay(1)
 
     for x in range(0, 5):
-        for frame in range(0, 15):  # attack 1
+        for frame in range(0, 15):  # jump
             clear_canvas()
             char_jump.clip_draw(frame * 128, 0, 128, 128, 400, 380, 600, 600)
             update_canvas()
