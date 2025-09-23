@@ -1,3 +1,10 @@
+sprites = (
+(),
+(),
+(),
+()
+)
+
 from pico2d import *
 
 open_canvas()
@@ -60,6 +67,18 @@ while True:
             delay(0.1)
 
     delay(1)
+
+#While True:
+    #for animation in sprites:
+    #    for i in range(5):
+    #        play_animation(animation)
+    #        delay(1)
+
+    #def play_animation(animation):
+    #    for frame in animation:
+    #        clear_canvas()
+    #        sprite.clip_draw(frame[0], frame[1], frame[2], frame[3], 400, 300, 300, 300)
+    #        update_canvas()
 
 
 close_canvas()
